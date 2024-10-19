@@ -21,14 +21,16 @@ body {
 .nav-items ul {
   display: flex;
   padding: 0px 20px;
+  color: rgba(0, 0, 0, 0.6);
   list-style-type: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
   font-size: 20px;
 }
 
 .nav-items > ul > li {
   padding: 10px;
   margin: 10px;
-  font-weight: bold;
 }
 
 .search {
@@ -47,18 +49,28 @@ body {
 
 .res-card {
   width: 194px;
-  height: 350px;
+  height: 320px;
   margin: 5px;
   padding: 5px;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 15px;
+  line-height: 0.8;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 200;
+  font-size: 17px;
   background-color: #f6fff8;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+.res-card h3{
+  overflow: hidden; 
+  text-overflow: ellipsis;     
+  white-space: nowrap;
+}
+
 .res-card p {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.6);  
+  overflow: hidden;        
+  text-overflow: ellipsis;     
+  white-space: nowrap;
 }
 
 .res-card:hover {

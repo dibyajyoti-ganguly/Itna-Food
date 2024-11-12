@@ -33,6 +33,17 @@ body {
   margin: 10px;
 }
 
+.login{
+  padding: 0 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  list-style-type: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
 .search {
   background-color: #eaf4f4;
   margin: 25px 0;
@@ -40,6 +51,30 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+
+.search-box{
+  background-color: #eaf4f4;
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+  height: 98%;
+  width: 90%;
+}
+
+.search-btn{
+  cursor: pointer;
+  height: 98%;
+  width: 8.5%;
+  box-shadow: 0 3px 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border-style: none;
+  outline: none;
+  color: rgba(0, 0, 0, 0.6);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+}
+
 
 .filter-btn{
   background-color: #f6fff8;
@@ -55,6 +90,30 @@ body {
 
 .filter-btn:hover{
   cursor: pointer;
+}
+
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.shimmer-card{
+  width: 194px;
+  height: 300px;
+  margin: 5px;
+  padding: 5px;
+  background: linear-gradient(-45deg, #eee 40%, lightgray 50%, #eee 60%);
+  background-size: 300%;
+  background-position-x: 100%;
+  animation: shimmer 1s infinite linear;
+
+}
+
+@keyframes shimmer {
+  to {
+     background-position-x: 0%
+  }
 }
 
 .res-container {

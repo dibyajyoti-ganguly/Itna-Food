@@ -3,7 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 
 const Body = ({ nval, type }) => {
-  let [list, setList] = useState([]);
+  const [list, setList] = useState([]);
 
   useEffect(
     () =>
@@ -12,7 +12,6 @@ const Body = ({ nval, type }) => {
           "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4449799&lng=78.3596892&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
         );
         const json = await data.json();
-        console.log(json);
         const newList =
           json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants;
@@ -28,10 +27,7 @@ const Body = ({ nval, type }) => {
       <button
         className="filter-btn"
         onClick={() => {
-          let filteredList = list.filter(
-            (resObj) => resObj.info.avgRating > 4.5
-          );
-          setList(filteredList);
+          setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
         }}
       >
         Top-Rated Restaurants
@@ -42,7 +38,9 @@ const Body = ({ nval, type }) => {
               <RestaurantCard key={resObj.info.id} resData={resObj} />
             ))
           : list
-              .filter((resObj) => resObj.info.name.toLowerCase().includes(type.toLowerCase()))
+              .filter((resObj) =>
+                resObj.info.name.toLowerCase().includes(type.toLowerCase())
+              )
               .map((resObj) => (
                 <RestaurantCard key={resObj.info.id} resData={resObj} />
               ))}

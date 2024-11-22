@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
+import { useOutletContext } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 
-const Body = ({ nval, type }) => {
+const Body = () => {
+  const { nval, type } = useOutletContext();
   const [list, setList] = useState([]);
 
   useEffect(

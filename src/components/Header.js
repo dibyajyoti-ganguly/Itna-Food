@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Logo from "../images/Group 18116.png";
+import { Link } from "react-router-dom";
 
-const Header = ({ updateType, nval, updateVal}) => {
+const Header = ({ updateType, nval, updateVal }) => {
   const [click, setClick] = useState("Login");
   return (
     <div className="header">
@@ -24,13 +25,45 @@ const Header = ({ updateType, nval, updateVal}) => {
             console.log(event.target.value);
           }}
         ></input>
-        <button className="search-btn" onClick={()=>updateVal(!nval)}>S</button>
+        <button className="search-btn" onClick={() => updateVal(!nval)}>
+          S
+        </button>
       </div>
       <div className="nav-items">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About Us</a></li>
-          <li><a href="/contact">Contact Us</a></li>
+          <li>
+            <Link
+              to="/"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              About Us
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              Contact Us
+            </Link>
+          </li>
           <li>Cart</li>
           <button
             className="login"

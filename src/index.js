@@ -1,34 +1,55 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import About from "./components/About";
-import Contact from "./components/Contact"
-import Errorcomp from "./components/Errorcomp"
+import Contact from "./components/Contact";
+import Errorcomp from "./components/Errorcomp";
+import Body from "./components/Body";
+import Header from "./components/Header";
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
 
+const App = () => {
+
+  const [change, setChange] = useState("");
+  const [val,setVal] = useState(0);
+
+  return (
+    <div className="app">
+      <Header  updateType={setChange} nval={val} updateVal={setVal}/>
+      <Outlet context={{ nval: val, type: change }}/>
+    </div>
+  );
+}
 
 const appRouter = createBrowserRouter([
   {
-    path:"/",
-    element:<App/>,
-    errorElement:<Errorcomp/>
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Body/>,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
+      },
+    ],
+    errorElement: <Errorcomp />,
   },
-  {
-    path:"/about",
-    element:<About/>
-  },
-  {
-    path:"/contact",
-    element:<Contact/>
-  },
-])
+]);
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider  router={appRouter}/>
+    <RouterProvider router={appRouter} />
   </React.StrictMode>
 );
 

@@ -1,28 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Errorcomp from "./components/Errorcomp";
 import Body from "./components/Body";
 import Header from "./components/Header";
-import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import RestaurantMenu from "./components/RestaurantMenu";
 
 const App = () => {
-
   const [change, setChange] = useState("");
-  const [val,setVal] = useState(0);
+  const [val, setVal] = useState(0);
 
   return (
     <div className="app">
-      <Header  updateType={setChange} nval={val} updateVal={setVal}/>
-      <Outlet context={{ nval: val, type: change }}/>
+      <Header updateType={setChange} nval={val} updateVal={setVal} />
+      <Outlet context={{ nval: val, type: change }} />
     </div>
   );
-}
+};
 
 const appRouter = createBrowserRouter([
   {
@@ -31,7 +29,7 @@ const appRouter = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Body/>,
+        element: <Body />,
       },
       {
         path: "/about",
@@ -40,6 +38,10 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />,
       },
     ],
     errorElement: <Errorcomp />,

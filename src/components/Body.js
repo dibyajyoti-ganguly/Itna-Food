@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useOutletContext } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
 
 const Body = () => {
   const { nval, type } = useOutletContext();
@@ -37,14 +38,32 @@ const Body = () => {
       <div className="res-container">
         {nval === 0
           ? list.map((resObj) => (
-              <RestaurantCard key={resObj.info.id} resData={resObj} />
+              <Link
+                key={resObj.info.id}
+                to={"/restaurants/" + resObj.info.id}
+                style={{
+                  color: "inherit",
+                  textDecoration: "none",
+                }}
+              >
+                <RestaurantCard resData={resObj} />
+              </Link>
             ))
           : list
               .filter((resObj) =>
                 resObj.info.name.toLowerCase().includes(type.toLowerCase())
               )
               .map((resObj) => (
-                <RestaurantCard key={resObj.info.id} resData={resObj} />
+                <Link
+                  key={resObj.info.id}
+                  to={"/restaurants/" + resObj.info.id}
+                  style={{
+                    color: "inherit",
+                    textDecoration: "none",
+                  }}
+                >
+                  <RestaurantCard resData={resObj} />
+                </Link>
               ))}
       </div>
     </div>

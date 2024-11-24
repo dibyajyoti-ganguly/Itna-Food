@@ -19,13 +19,21 @@ class UserClass extends React.Component {
 
   async componentDidMount() {
     //console.log(this.props.name + "Child Component Did Mount");
-
+    console.log("Component Mounted");
     const data = await fetch(USER_URL);
     const json = await data.json();
     console.log(json);
     this.setState({
       userInfo: json,
     });
+  }
+
+  componentDidUpdate() {
+    console.log("Component Updated");
+  }
+
+  componentWillUnmount() {
+    console.log("Component Unmounted");
   }
 
   render() {

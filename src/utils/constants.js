@@ -3,3 +3,5 @@ export const CDN_URL =
 
 export const MENU_URL =
   "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.4449799&lng=78.3596892&restaurantId=";
+
+export const USER_URL = "https://api.github.com/users/dibyajyoti-ganguly";

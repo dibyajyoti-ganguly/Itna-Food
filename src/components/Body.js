@@ -1,27 +1,11 @@
-import { useState, useEffect } from "react";
-import { useOutletContext } from "react-router-dom";
+import { useOutletContext, Link } from "react-router-dom";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
-import { Link } from "react-router-dom";
+import useRestaurantList from "../utils/useRestaurantList";
 
 const Body = () => {
   const { nval, type } = useOutletContext();
-  const [list, setList] = useState([]);
-
-  useEffect(
-    () =>
-      async function fetchData() {
-        const data = await fetch(
-          "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4449799&lng=78.3596892&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-        );
-        const json = await data.json();
-        const newList =
-          json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-            ?.restaurants;
-        setList(newList);
-      },
-    []
-  );
+  const { list, setList } = useRestaurantList();
 
   return list.length === 0 ? (
     <Shimmer />

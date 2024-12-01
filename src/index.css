@@ -48,7 +48,7 @@ body {
 .search {
   background-color: #eaf4f4;
   margin: 25px 0;
-  width: 40%;
+  width: 32%;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
@@ -59,7 +59,7 @@ body {
   border-style: none;
   outline: none;
   height: 98%;
-  width: 90%;
+  width: 89%;
 }
 
 .search-btn {

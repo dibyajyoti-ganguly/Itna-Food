@@ -67,6 +67,17 @@ const Header = ({ updateType, nval, updateVal }) => {
               Contact Us
             </Link>
           </li>
+          <li>
+            <Link
+              to="/grocery"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              Grocery
+            </Link>
+          </li>
           <li>Cart</li>
           <button
             className="login"

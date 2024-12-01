@@ -1,14 +1,17 @@
-import React, { useState } from "react";
+import React, { lazy, useState, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Shimmer from "./components/Shimmer";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Errorcomp from "./components/Errorcomp";
 import Body from "./components/Body";
 import Header from "./components/Header";
 import RestaurantMenu from "./components/RestaurantMenu";
+
+const Grocery = lazy(() => import("./components/Grocery"));
 
 const App = () => {
   const [change, setChange] = useState("");
@@ -38,6 +41,14 @@ const appRouter = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/grocery",
+        element: (
+          <Suspense fallback={<Shimmer />}>
+            <Grocery />
+          </Suspense>
+        ),
       },
       {
         path: "/restaurants/:resId",

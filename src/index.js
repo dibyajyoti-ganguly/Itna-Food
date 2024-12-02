@@ -18,7 +18,7 @@ const App = () => {
   const [val, setVal] = useState(0);
 
   return (
-    <div className="app">
+    <div className="bg-zinc-200">
       <Header updateType={setChange} nval={val} updateVal={setVal} />
       <Outlet context={{ nval: val, type: change }} />
     </div>

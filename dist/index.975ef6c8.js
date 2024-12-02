@@ -2977,7 +2977,7 @@ const App = ()=>{
     const [change, setChange] = (0, _react.useState)("");
     const [val, setVal] = (0, _react.useState)(0);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "app",
+        className: "bg-zinc-200",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {
                 updateType: setChange,

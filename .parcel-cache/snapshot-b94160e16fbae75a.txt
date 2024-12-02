@@ -31,7 +31,7 @@
 60C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\.postcssrc133776222836943061 0
 85C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\json5\lib\stringify.js133776210864769178 0
 92C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\lru-cache\dist\esm\index.d.ts133776221831214350 0
-60C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\.gitignore133735660383159004 0
+60C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\.gitignore133776428287802925 0
 99C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\which-collection\.github\FUNDING.yml133735660321490547 0
 121C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\lmdb\dependencies\lmdb-data-v1\libraries\liblmdb\COPYRIGHT133776210875189966 0
 122C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@testing-library\jest-dom\node_modules\ansi-styles\index.js133735660651748908 0
@@ -41,7 +41,7 @@
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\31fbd8dc1a73efee6c2543536fcd6e4744857d1087d2ff7f82ada80d446cb240.json133768097778371881 0
 94C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\signal-exit\dist\mjs\index.d.ts133776221830974334 0
 90C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\is-boolean-object\README.md133735660250455121 0
-53C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src133776222980072188 1
+53C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src133776401918521184 1
 68C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@jest133776210400617608 1
 80C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\utils\useRestaurantList.js133769888866174369 0
 86C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\react-error-overlay\lib133776210871499690 1
@@ -53,7 +53,7 @@
 87C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\undici-types\client.d.ts133735660357654527 0
 82C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\fast-glob\out\types133776221831894428 1
 94C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@parcel\utils\test\input\config133776210962484563 1
-54C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist133776228094911155 1
+54C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist133776428765697034 1
 89C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@parcel\optimizer-htmlnano133776210935512487 1
 101C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\entities\lib\esm\decode_codepoint.d.ts133776210867309369 0
 77C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\components\UserClass.js133769562719593468 0
@@ -104,7 +104,7 @@
 70C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@isaacs133776221822833759 1
 89C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\pretty-format\node_modules133735660203150387 1
 76C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\indent-string133735660652388976 1
-64C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\components133776208450345455 1
+64C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\components133776401918491188 1
 151C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@testing-library\react\node_modules\@testing-library\dom\dist\get-queries-for-element.js133735660663315930 0
 105C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@parcel\core\src\requests\ConfigRequest.js133776210953413884 0
 87C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\cosmiconfig\dist\util.js133776210867899412 0
@@ -151,7 +151,7 @@
 114C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_load.1133776210878200203 0
 71C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@nodelib133776221822833759 1
 89C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\msgpackr-extract\README.md133776210870839630 0
-62C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\index.js133776206721484126 0
+62C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\index.js133776428762206760 0
 91C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\postcss\lib\declaration.d.ts133776221831724392 0
 72C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\reportWebVitals.js133735661486238435 0
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\e6bc6893c249b4136afd28e1bd01d87c0bc394a8ffd6d04fb46eb229d9957929.json133735663285029276 0
@@ -213,7 +213,7 @@
 106C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@swc\helpers\cjs\_await_async_generator.cjs133776210875409981 0
 72C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\which\bin133776221825853963 1
 86C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\lodash\_baseAssignIn.js133735660334763696 0
-73C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\components\About.js133769343117144376 0
+73C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\components\About.js133776415071186938 0
 86C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\react-refresh\README.md133776210872869791 0
 101C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\type-fest\source\iterable-element.d.ts133776210865569233 0
 77C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@humanwhocodes133776210356494251 1
@@ -258,7 +258,7 @@
 115C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\caniuse-lite\data\features\getelementsbyclassname.js133776210879730335 0
 113C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\aria-query\lib\etc\roles\literal\navigationRole.js133735660351444059 0
 92C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\signal-exit\dist\mjs\index.js133776221827764099 0
-74C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\components\Header.js133776228092026294 0
+74C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\src\components\Header.js133776401918501196 0
 95C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@nodelib\fs.scandir\package.json133776221829504237 0
 97C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\dom-accessibility-api\package.json133735660653229026 0
 74C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\path-scurry133776221830164278 1
@@ -3007,7 +3007,7 @@
 88C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\dotenv\lib\env-options.js133776210881330436 0
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\9a703fdf185fca5ed6b7998dc3c32eec8aff06eb679e10a8357d94b431e1259e.json133769957981432403 0
 97C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\tailwindcss\stubs\.prettierrc.json133776221837164810 0
-79C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\Group 18116.731da7d2.png133776227923307208 0
+79C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\Group 18116.731da7d2.png133776374242982518 0
 85C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\resolve\lib\is-core.js133776221832724486 0
 96C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\@testing-library\jest-dom\LICENSE133735660654736852 0
 95C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\tailwindcss\stubs\config.full.js133776221832344443 0
@@ -10784,7 +10784,7 @@
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\7f3e496ec8ec4a46d1a1c6e3c0026d4e718ac1eac71b91f436d9676918f4f0b0.json133735664685388413 0
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\7ffe4ad56bbaee3448f4ba1618593e39c60020a4423a05c195e813283ed19085.json133763780629276075 0
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\802f75aa61acf67c4a8b62644cf86b55be65d9c33b1075c5f6e258946ca3fde6.json133767084040081919 0
-73C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.61d3354a.css133776227924737298 0
+73C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.61d3354a.css133776428765286999 0
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\80c5de2a50e5c5536367fb41737e7504909c5b51c095ec64aca5442d37eee95d.json133737034841315040 0
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\8136985c351ec788754a6612423de13450f3bcac34fa025e2052cd78ec7584d7.json133736185259377370 0
 152C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.cache\babel-loader\8159880ee52d5dde85fd1d0a4f43fef458ba84cc11ab89801896fcc8d882af36.json133767072976395173 0
@@ -10973,7 +10973,7 @@
 84C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\loose-envify.ps1133735660523844986 0
 77C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\lz-string133735660690277935 0
 81C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\lz-string.cmd133735660690277935 0
-65C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.html133776227924367270 0
+65C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.html133776374242972520 0
 81C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\lz-string.ps1133735660690267928 0
 78C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\nanoid.cmd133776221838004866 0
 100C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\node-gyp-build-optional-packages133776211347324797 0
@@ -11002,10 +11002,10 @@
 94C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\update-browserslist-db.ps1133776211347354796 0
 76C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\yaml.cmd133776221838014865 0
 76C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\node_modules\.bin\yaml.ps1133776221838004866 0
-74C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\Grocery.c52c2ad2.js133776227923307208 0
-78C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\Grocery.c52c2ad2.js.map133776227923427193 0
-77C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.61d3354a.css.map133776227924777316 0
-72C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.975ef6c8.js133776228094751138 0
-76C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.975ef6c8.js.map133776228094891172 0
-77C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\web-vitals.d8898944.js133776227923297204 0
-81C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\web-vitals.d8898944.js.map133776227923427193 0
+74C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\Grocery.c52c2ad2.js133776374241812457 0
+78C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\Grocery.c52c2ad2.js.map133776374242012462 0
+77C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.61d3354a.css.map133776428765327008 0
+72C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.975ef6c8.js133776428765567036 0
+76C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\index.975ef6c8.js.map133776428765677047 0
+77C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\web-vitals.d8898944.js133776374241802441 0
+81C:\Users\HP\OneDrive\Desktop\Hallelujah\itna-food\dist\web-vitals.d8898944.js.map133776374242002466 0

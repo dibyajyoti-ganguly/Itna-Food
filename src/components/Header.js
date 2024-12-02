@@ -7,7 +7,7 @@ const Header = ({ updateType, nval, updateVal }) => {
   const [click, setClick] = useState("Login");
   const onlineStatus = useOnlineStatus();
   return (
-    <div className="header">
+    <div className="flex">
       <div className="logo-container">
         <img className="logo" src={Logo} alt="logo"></img>
       </div>

@@ -7,34 +7,30 @@ const Header = ({ updateType, nval, updateVal }) => {
   const [click, setClick] = useState("Login");
   const onlineStatus = useOnlineStatus();
   return (
-    <div className="flex">
+    <div className="flex justify-around items-center mx-auto my-0 w-4/5 bg-neutral-100 shadow-md rounded-xl">
       <div className="logo-container">
-        <img className="logo" src={Logo} alt="logo"></img>
+        <img className="w-24 mt-3" src={Logo} alt="logo"></img>
       </div>
-      <div className="search">
+      <div className="bg-zinc-200 m-6 w-1/4 shadow-md rounded-lg h-12">
         <input
-          style={{
-            fontSize: "18px",
-            fontFamily:
-              "'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif",
-            fontWeight: "bold",
-            color: "rgba(0, 0, 0, 0.6)",
-          }}
           type="text"
-          className="search-box"
+          className="bg-zinc-200 rounded-lg outline-none h-12 w-5/6"
           onChange={(event) => {
             updateType(event.target.value);
             console.log(event.target.value);
           }}
         ></input>
-        <button className="search-btn" onClick={() => updateVal(!nval)}>
+        <button
+          className="cursor-pointer h-12 w-1/6 rounded-lg outline-none text-slate-500 font-mono text-2xl font-bold"
+          onClick={() => updateVal(!nval)}
+        >
           S
         </button>
       </div>
       <div className="nav-items">
-        <ul>
-          <li>{onlineStatus ? "Online🟢" : "Offline⭕"}</li>
-          <li>
+        <ul className="flex items-center px-0 py-4 list-none text-slate-500 font-mono text-lg font-bold">
+          <li className="p-2 m-2">{onlineStatus ? "Online🟢" : "Offline⭕"}</li>
+          <li className="p-2 m-2">
             <Link
               to="/"
               style={{
@@ -45,7 +41,7 @@ const Header = ({ updateType, nval, updateVal }) => {
               Home
             </Link>
           </li>
-          <li>
+          <li className="p-2 m-2">
             <Link
               to="/about"
               style={{
@@ -56,7 +52,7 @@ const Header = ({ updateType, nval, updateVal }) => {
               About Us
             </Link>
           </li>
-          <li>
+          <li className="p-2 m-2">
             <Link
               to="/contact"
               style={{
@@ -67,7 +63,7 @@ const Header = ({ updateType, nval, updateVal }) => {
               Contact Us
             </Link>
           </li>
-          <li>
+          <li className="p-2 m-2">
             <Link
               to="/grocery"
               style={{
@@ -78,9 +74,9 @@ const Header = ({ updateType, nval, updateVal }) => {
               Grocery
             </Link>
           </li>
-          <li>Cart</li>
+          <li className="p-2 m-2">Cart</li>
           <button
-            className="login"
+            className="p-2 m-2 cursor-pointer"
             onClick={() => {
               setClick(click === "Login" ? "Logout" : "Login");
             }}

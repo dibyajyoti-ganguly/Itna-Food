@@ -24,7 +24,7 @@ const Body = () => {
   ) : (
     <div className="body">
       <button
-        className="filter-btn"
+        className="bg-gray-300 mt-9 mr-auto mb-8 ml-5 px-4 py-2 border-solid border-gray-500 border rounded-lg font-mono font-bold text-base text-slate-500 cursor-pointer"
         onClick={() => {
           setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
         }}

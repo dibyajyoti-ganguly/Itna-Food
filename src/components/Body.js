@@ -23,15 +23,17 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <button
-        className="bg-gray-300 mt-9 mr-auto mb-8 ml-5 px-4 py-2 border-solid border-gray-500 border rounded-lg font-mono font-bold text-base text-slate-500 cursor-pointer"
-        onClick={() => {
-          setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
-        }}
-      >
-        Top-Rated Restaurants
-      </button>
-      <div className="res-container">
+      <div className="flex justify-center">
+        <button
+          className="bg-gray-300 mt-9 mb-8 px-4 py-2 border-solid border-gray-500 border rounded-lg font-mono font-bold text-base text-slate-500 cursor-pointer"
+          onClick={() => {
+            setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
+          }}
+        >
+          Top-Rated Restaurants
+        </button>
+      </div>
+      <div className="flex flex-wrap mt-1 ml-14">
         {nval === 0
           ? list.map((resObj) => (
               <Link

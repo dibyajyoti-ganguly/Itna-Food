@@ -3,7 +3,6 @@ import { USER_URL } from "../utils/constants";
 class UserClass extends React.Component {
   constructor(props) {
     super(props);
-    //console.log(this.props.name + "Child Constructor");
 
     this.state = {
       userInfo: {
@@ -18,7 +17,6 @@ class UserClass extends React.Component {
   }
 
   async componentDidMount() {
-    //console.log(this.props.name + "Child Component Did Mount");
     console.log("Component Mounted");
     const data = await fetch(USER_URL);
     const json = await data.json();
@@ -37,8 +35,6 @@ class UserClass extends React.Component {
   }
 
   render() {
-    //console.log(this.props.name + "Child Render");
-
     const { name, location, public_repos, avatar_url, followers, following } =
       this.state.userInfo;
     return (

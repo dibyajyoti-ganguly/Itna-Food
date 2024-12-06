@@ -21,18 +21,23 @@ const RestaurantMenu = () => {
         ?.card?.categories[0]?.itemCards;
 
     return (
-      <div className="menu">
-        <h2>{name}</h2>
-        <p>
+      <div className="mt-10 mr-auto mb-auto ml-8 font-mono font-medium tracking-normal text-base">
+        <h2 className="text-xl font-extrabold ">{name}</h2>
+        <p className="text-xl font-extrabold">
           {cuisines.join(", ")} - {costForTwoMessage}
         </p>
-        <h3>
+        <br />
+        <h3 className="text-xl font-extrabold">
           <i>Top Picks</i>
         </h3>
+        <br />
         <ul>
           {itemCards?.map((item) => {
             return (
-              <li key={item?.card?.info?.id}>
+              <li
+                className="text-slate-500 list-none"
+                key={item?.card?.info?.id}
+              >
                 {item?.card?.info?.name} - ₹
                 {(
                   (item?.card?.info?.price || item?.card?.info?.defaultPrice) /

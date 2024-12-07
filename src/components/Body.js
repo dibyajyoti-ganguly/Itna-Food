@@ -11,9 +11,9 @@ const Body = () => {
 
   if (onlinestatus === false) {
     return (
-      <div className="signal-card">
+      <div className="flex justify-center mt-8 text-slate-400 font-mono text-2xl font-bold">
         <h3>
-          Looks like you are offline! Please check your internet connection.
+          Looks like you are offline! Please check your internet connection...
         </h3>
       </div>
     );
@@ -25,7 +25,7 @@ const Body = () => {
     <div className="body">
       <div className="flex justify-center">
         <button
-          className="bg-gray-300 mt-9 mb-8 px-4 py-2 border-solid border-gray-500 border rounded-lg font-mono font-bold text-base text-slate-500 cursor-pointer"
+          className="bg-gray-300 mt-10 mb-7 px-4 py-2 border-solid border-gray-500 border rounded-lg font-mono font-bold text-base text-slate-500 cursor-pointer"
           onClick={() => {
             setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
           }}

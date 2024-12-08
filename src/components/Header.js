@@ -11,7 +11,7 @@ const Header = ({ updateType, nval, updateVal }) => {
       <div className="logo-container">
         <img className="w-24 mt-3" src={Logo} alt="logo"></img>
       </div>
-      <div className="bg-zinc-200 m-6 w-1/4 shadow-md rounded-lg h-12">
+      <div className="bg-zinc-200 w-1/4 shadow-md rounded-lg h-12">
         <input
           type="text"
           className="bg-zinc-200 rounded-lg outline-none h-12 w-5/6"

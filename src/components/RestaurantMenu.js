@@ -16,10 +16,10 @@ const RestaurantMenu = () => {
     const itemCards =
       resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
         ?.card?.itemCards ||
-      resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
-        ?.card?.itemCards ||
       resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[2]?.card
-        ?.card?.categories[0]?.itemCards;
+        ?.card?.categories[0]?.itemCards ||
+      resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[3]?.card
+        ?.card?.itemCards;
 
     return (
       <div className="mt-10 mr-auto mb-auto ml-8 flex flex-col items-center font-mono font-medium tracking-tighter text-base">
@@ -27,8 +27,6 @@ const RestaurantMenu = () => {
         <p className="text-base text-[rgba(2,6,12,0.6)]">
           {cuisines.join(", ")} - {costForTwoMessage}
         </p>
-        <br />
-        <h3 className="text-xl font-extrabold">Top Picks</h3>
         <ul>
           {itemCards?.map((item) => {
             return (

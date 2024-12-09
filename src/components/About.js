@@ -15,12 +15,8 @@ class About extends React.Component {
   render() {
     //console.log("Parent Render");
     return (
-      <div className="m-4 p-4 text-slate-500 font-mono text-2xl font-bold">
-        <h2>Hello!!</h2>
-        <p>
-          <i>Want to learn more about us?</i> 🤖
-        </p>
-        <br />
+      <div className="flex flex-col items-center mt-[80px] justify-around font-mono tracking-tighter font-bold">
+        <h1 className="text-4xl font-sans">ABOUT US</h1>
         <UserClass />
       </div>
     );

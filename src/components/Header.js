@@ -21,7 +21,7 @@ const Header = ({ updateType, nval, updateVal }) => {
           }}
         ></input>
         <button
-          className="cursor-pointer h-12 w-1/6 rounded-lg outline-none text-slate-500 font-mono text-2xl font-bold"
+          className="cursor-pointer h-12 w-1/6 rounded-lg outline-none text-slate-500 font-mono text-2xl font-bold hover:text-black"
           onClick={() => updateVal(!nval)}
         >
           S
@@ -29,8 +29,10 @@ const Header = ({ updateType, nval, updateVal }) => {
       </div>
       <div className="nav-items">
         <ul className="flex items-center px-0 py-4 list-none text-slate-500 font-mono text-lg font-bold">
-          <li className="p-2 m-2">{onlineStatus ? "Online🟢" : "Offline⭕"}</li>
-          <li className="p-2 m-2">
+          <li className="p-2 m-2 hover:text-black">
+            {onlineStatus ? "Online🟢" : "Offline⭕"}
+          </li>
+          <li className="p-2 m-2 hover:text-black">
             <Link
               to="/"
               style={{
@@ -41,7 +43,7 @@ const Header = ({ updateType, nval, updateVal }) => {
               Home
             </Link>
           </li>
-          <li className="p-2 m-2">
+          <li className="p-2 m-2 hover:text-black">
             <Link
               to="/about"
               style={{
@@ -52,7 +54,7 @@ const Header = ({ updateType, nval, updateVal }) => {
               About Us
             </Link>
           </li>
-          <li className="p-2 m-2">
+          <li className="p-2 m-2 hover:text-black">
             <Link
               to="/contact"
               style={{
@@ -63,7 +65,7 @@ const Header = ({ updateType, nval, updateVal }) => {
               Contact Us
             </Link>
           </li>
-          <li className="p-2 m-2">
+          <li className="p-2 m-2 hover:text-black">
             <Link
               to="/grocery"
               style={{
@@ -74,9 +76,9 @@ const Header = ({ updateType, nval, updateVal }) => {
               Grocery
             </Link>
           </li>
-          <li className="p-2 m-2">Cart</li>
+          <li className="p-2 m-2 hover:text-black">Cart</li>
           <button
-            className="p-2 m-2 cursor-pointer"
+            className="p-2 m-2 hover:text-black cursor-pointer"
             onClick={() => {
               setClick(click === "Login" ? "Logout" : "Login");
             }}

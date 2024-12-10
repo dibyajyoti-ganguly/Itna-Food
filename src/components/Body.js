@@ -25,7 +25,7 @@ const Body = () => {
     <div className="body">
       <div className="flex justify-center">
         <button
-          className="bg-gray-300 mt-10 mb-7 px-4 py-2 border-solid border-gray-500 border rounded-xl font-mono font-bold text-base text-slate-500 hover:border-black hover:text-black cursor-pointer"
+          className="bg-zinc-200 mt-10 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 cursor-pointer"
           onClick={() => {
             setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
           }}

@@ -32,11 +32,26 @@ const ItemList = ({ title, itemCards }) => {
                 ) : null}
                 <p className="line-clamp-2">{item?.card?.info?.description}</p>
               </span>
-              <img
-                className="w-40 h-36 rounded-xl shadow-2xl"
-                src={CDN_URL + item?.card?.info?.imageId}
-                alt="Item"
-              />
+              <div className="w-[160px]">
+                <div className="absolute">
+                  <button className="px-6 py-2 mt-28 ml-10 rounded-lg bg-zinc-200 shadow-lg text-lg font-black tracking-wider text-green-800">
+                    ADD
+                  </button>
+                </div>
+                {item?.card?.info?.imageId ? (
+                  <img
+                    className="w-40 h-36 rounded-xl shadow-2xl"
+                    src={CDN_URL + item?.card?.info?.imageId}
+                    alt="Item"
+                  />
+                ) : (
+                  <img
+                    className="w-40 h-36 rounded-xl shadow-2xl"
+                    src="https://static.thenounproject.com/png/2186849-200.png"
+                    alt="Item"
+                  />
+                )}
+              </div>
             </li>
           );
         })}

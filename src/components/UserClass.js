@@ -38,7 +38,7 @@ class UserClass extends React.Component {
     const { name, location, public_repos, avatar_url, followers, following } =
       this.state.userInfo;
     return (
-      <div className="flex justify-around w-[420px] mt-5 pt-3 py-1 pb-3 items-center font-mono font-semibold tracking-normal text-base leading-6 bg-neutral-100 rounded-2xl shadow-md ">
+      <div className="flex justify-around w-[365px] mt-5 pt-3 pb-3 items-center font-mono font-semibold tracking-normal text-base leading-6 bg-neutral-100 rounded-2xl shadow-md ">
         <img
           className=" h-[150px] w-[150px] rounded-2xl"
           src={avatar_url}

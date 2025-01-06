@@ -10,9 +10,9 @@ const RestaurantCategory = ({ itemCards, title }) => {
         <h2 className="text-xl font-extrabold my-5">
           {title}({itemCards.length})
         </h2>
-        <button onClick={() => setClick(!click)}>{click ? "▲" : "▼"}</button>
+        <button onClick={() => setClick(!click)}>{click ? "▼" : "▲"}</button>
       </div>
-      {click ? <ItemList itemCards={itemCards} title={title} /> : null}
+      {click ? null : <ItemList itemCards={itemCards} title={title} />}
       <hr className="border-t-2 border-gray-300" />
     </div>
   );

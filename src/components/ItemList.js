@@ -34,7 +34,7 @@ const ItemList = ({ title, itemCards }) => {
               </span>
               <div className="w-[160px]">
                 <div className="absolute">
-                  <button className="px-6 py-2 mt-28 ml-10 rounded-lg bg-zinc-200 shadow-lg text-lg font-black tracking-wider text-green-800">
+                  <button className="px-6 py-2 mt-28 ml-10 rounded-lg bg-zinc-200 shadow-lg text-lg font-extrabold tracking-wider text-green-800 opacity-90">
                     ADD
                   </button>
                 </div>

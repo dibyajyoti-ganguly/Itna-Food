@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Logo from "../images/Group 18116.png";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Header = ({ updateType, nval, updateVal }) => {
   const [click, setClick] = useState("Login");
   const onlineStatus = useOnlineStatus();
+  const data = useContext(UserContext);
+
   return (
     <div className="flex justify-around items-center mx-auto my-0 w-4/5 bg-neutral-100 shadow-md rounded-xl">
       <div className="logo-container">
@@ -80,7 +83,7 @@ const Header = ({ updateType, nval, updateVal }) => {
           <button
             className="p-2 m-2 hover:text-black cursor-pointer"
             onClick={() => {
-              setClick(click === "Login" ? "Logout" : "Login");
+              setClick(click === "Login" ? data.username : "Login");
             }}
           >
             {click}

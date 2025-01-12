@@ -1,13 +1,16 @@
 import { useOutletContext, Link } from "react-router-dom";
+import { useContext } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import useRestaurantList from "../utils/useRestaurantList";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import UserContext from "../utils/UserContext";
 
 const Body = () => {
   const { nval, type } = useOutletContext();
   const { list, setList } = useRestaurantList();
   const onlinestatus = useOnlineStatus();
+  const { username } = useContext(UserContext);
 
   if (onlinestatus === false) {
     return (
@@ -30,7 +33,7 @@ const Body = () => {
             setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
           }}
         >
-          Top-Rated Restaurants
+          Top-Rated Restaurants for {username}
         </button>
       </div>
       <div className="flex flex-wrap mt-1 ml-14">

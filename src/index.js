@@ -17,9 +17,10 @@ const Grocery = lazy(() => import("./components/Grocery"));
 const App = () => {
   const [change, setChange] = useState("");
   const [val, setVal] = useState(0);
+  const [username, setUsername] = useState("You");
 
   return (
-    <UserContext.Provider value={{ username: "You" }}>
+    <UserContext.Provider value={{ username: username, setUsername }}>
       <div className="bg-zinc-200 p-0 min-h-screen">
         <UserContext.Provider value={{ username: "Dibyajyoti" }}>
           <Header updateType={setChange} nval={val} updateVal={setVal} />

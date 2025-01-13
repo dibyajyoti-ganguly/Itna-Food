@@ -11,6 +11,7 @@ const Body = () => {
   const { list, setList } = useRestaurantList();
   const onlinestatus = useOnlineStatus();
   const { username } = useContext(UserContext);
+  const { setUsername } = useContext(UserContext);
 
   if (onlinestatus === false) {
     return (
@@ -25,8 +26,8 @@ const Body = () => {
   return list.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="pb-5">
-      <div className="flex justify-center">
+    <div className="pb-6">
+      <div className="flex justify-evenly py-3">
         <button
           className="bg-zinc-200 mt-10 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 cursor-pointer"
           onClick={() => {
@@ -35,6 +36,11 @@ const Body = () => {
         >
           Top-Rated Restaurants for {username}
         </button>
+        <input
+          className=" outline-none text-center bg-zinc-200 w-[280px] mt-10 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 cursor-pointer"
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        ></input>
       </div>
       <div className="flex flex-wrap mt-1 ml-14">
         {nval === 0

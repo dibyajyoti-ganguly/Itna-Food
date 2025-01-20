@@ -10,6 +10,7 @@ import Errorcomp from "./components/Errorcomp";
 import Body from "./components/Body";
 import Header from "./components/Header";
 import RestaurantMenu from "./components/RestaurantMenu";
+import Cart from "./components/Cart";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
@@ -60,6 +61,10 @@ const appRouter = createBrowserRouter([
             <Grocery />
           </Suspense>
         ),
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
       {
         path: "/restaurants/:resId",

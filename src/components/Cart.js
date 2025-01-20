@@ -1,14 +1,16 @@
+import { useSelector, useDispatch } from "react-redux";
+import { removeItem } from "../utils/cartSlice";
 import { CDN_URL } from "../utils/constants";
-import { useDispatch } from "react-redux";
-import { addItem } from "../utils/cartSlice";
+import Del from "../images/delete.png";
 
-const ItemList = ({ title, itemCards }) => {
+const Cart = () => {
+  const cartItems = useSelector((store) => store.cart.items);
   const dispatch = useDispatch();
+
   return (
-    <div>
-      <ul key={title}>
-        {" "}
-        {itemCards?.map((item) => {
+    <div className="mt-20 mr-auto mb-auto ml-8 flex flex-col items-center font-mono font-medium tracking-tighter text-base">
+      <ul>
+        {cartItems.map((item) => {
           return (
             <li
               className="flex w-[680px] justify-between list-none mb-10"
@@ -38,12 +40,12 @@ const ItemList = ({ title, itemCards }) => {
               <div className="w-[160px]">
                 <div className="absolute">
                   <button
-                    className="px-6 py-2 mt-28 ml-10 rounded-lg bg-zinc-200 shadow-lg text-lg font-extrabold tracking-wider text-green-800 opacity-90"
+                    className="px-4 py-2 mt-28 ml-14 rounded-lg bg-zinc-200 shadow-lg text-lg font-extrabold tracking-wider text-green-800 opacity-90"
                     onClick={() => {
-                      dispatch(addItem(item));
+                      dispatch(removeItem());
                     }}
                   >
-                    ADD
+                    <img className="w-5 h-5" src={Del} alt="Delete" />
                   </button>
                 </div>
                 {item?.card?.info?.imageId ? (
@@ -68,4 +70,4 @@ const ItemList = ({ title, itemCards }) => {
   );
 };
 
-export default ItemList;
+export default Cart;

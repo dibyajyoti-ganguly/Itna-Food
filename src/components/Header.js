@@ -82,7 +82,17 @@ const Header = ({ updateType, nval, updateVal }) => {
               Grocery
             </Link>
           </li>
-          <li className="p-2 m-2 hover:text-black">Cart({cartItems.length})</li>
+          <li className="p-2 m-2 hover:text-black">
+            <Link
+              to="/cart"
+              style={{
+                color: "inherit",
+                textDecoration: "none",
+              }}
+            >
+              Cart({cartItems.length})
+            </Link>
+          </li>
           <button
             className="p-2 m-2 hover:text-black cursor-pointer"
             onClick={() => {

@@ -31,8 +31,6 @@ const RestaurantMenu = () => {
           "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
       );
 
-    console.log(categories);
-
     return (
       <div className="mt-10 mr-auto mb-auto ml-8 flex flex-col items-center font-mono font-medium tracking-tighter text-base">
         <h2 className="text-xl font-extrabold ">{name}</h2>

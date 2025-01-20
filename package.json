@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^2.5.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-redux": "^9.2.0",
     "react-router-dom": "^6.28.0",
     "web-vitals": "^2.1.4"
   },
@@ -35,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "@parcel/transformer-webmanifest": "^2.13.2",
     "parcel": "^2.13.2",
     "postcss": "^8.4.49",
     "process": "^0.11.10",

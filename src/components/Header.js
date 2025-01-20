@@ -3,11 +3,14 @@ import Logo from "../images/Group 18116.png";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 const Header = ({ updateType, nval, updateVal }) => {
   const [click, setClick] = useState("Login");
   const onlineStatus = useOnlineStatus();
   const data = useContext(UserContext);
+
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <div className="flex justify-around items-center mx-auto my-0 w-4/5 bg-neutral-100 shadow-md rounded-xl">
@@ -17,7 +20,7 @@ const Header = ({ updateType, nval, updateVal }) => {
       <div className="bg-zinc-200 w-1/4 shadow-md rounded-lg h-12">
         <input
           type="text"
-          className="bg-zinc-200 rounded-lg outline-none h-12 w-5/6"
+          className="bg-zinc-200 rounded-lg outline-none h-12 w-5/6 text-center text-slate-500 font-mono text-md font-bold"
           onChange={(event) => {
             updateType(event.target.value);
             console.log(event.target.value);
@@ -79,7 +82,7 @@ const Header = ({ updateType, nval, updateVal }) => {
               Grocery
             </Link>
           </li>
-          <li className="p-2 m-2 hover:text-black">Cart</li>
+          <li className="p-2 m-2 hover:text-black">Cart({cartItems.length})</li>
           <button
             className="p-2 m-2 hover:text-black cursor-pointer"
             onClick={() => {

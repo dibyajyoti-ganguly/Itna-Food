@@ -37,8 +37,8 @@ const Body = () => {
           Top-Rated Restaurants for {username}
         </button>
         <input
-          className=" outline-none text-center bg-zinc-200 w-[280px] mt-10 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 cursor-pointer"
-          value={username}
+          className=" outline-none text-center bg-zinc-200 w-[280px] mt-10 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500"
+          placeholder="Enter your name"
           onChange={(e) => setUsername(e.target.value)}
         ></input>
       </div>

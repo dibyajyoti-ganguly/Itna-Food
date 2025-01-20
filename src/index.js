@@ -11,6 +11,8 @@ import Body from "./components/Body";
 import Header from "./components/Header";
 import RestaurantMenu from "./components/RestaurantMenu";
 import UserContext from "./utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 const Grocery = lazy(() => import("./components/Grocery"));
 
@@ -20,15 +22,17 @@ const App = () => {
   const [username, setUsername] = useState("You");
 
   return (
-    <UserContext.Provider value={{ username: username, setUsername }}>
-      <div className="bg-zinc-200 p-0 min-h-screen">
-        <UserContext.Provider value={{ username: "Dibyajyoti" }}>
-          <Header updateType={setChange} nval={val} updateVal={setVal} />
-        </UserContext.Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ username: username, setUsername }}>
+        <div className="bg-zinc-200 p-0 min-h-screen">
+          <UserContext.Provider value={{ username: "Dibyajyoti" }}>
+            <Header updateType={setChange} nval={val} updateVal={setVal} />
+          </UserContext.Provider>
 
-        <Outlet context={{ nval: val, type: change }} />
-      </div>
-    </UserContext.Provider>
+          <Outlet context={{ nval: val, type: change }} />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 

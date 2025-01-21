@@ -8,7 +8,8 @@ const Cart = () => {
   const dispatch = useDispatch();
 
   return (
-    <div className="mt-20 mr-auto mb-auto ml-8 flex flex-col items-center font-mono font-medium tracking-tighter text-base">
+    <div className="mt-16 mr-auto mb-auto ml-8 flex flex-col items-center font-mono font-medium tracking-tighter text-base">
+      <h1 className="text-2xl font-extrabold mb-12">Cart</h1>
       <ul>
         {cartItems.map((item) => {
           return (
@@ -42,7 +43,7 @@ const Cart = () => {
                   <button
                     className="px-4 py-2 mt-28 ml-14 rounded-lg bg-zinc-200 shadow-lg text-lg font-extrabold tracking-wider text-green-800 opacity-90"
                     onClick={() => {
-                      dispatch(removeItem());
+                      dispatch(removeItem(item));
                     }}
                   >
                     <img className="w-5 h-5" src={Del} alt="Delete" />

@@ -1,15 +1,27 @@
 import { useSelector, useDispatch } from "react-redux";
-import { removeItem } from "../utils/cartSlice";
+import { clearCart, removeItem } from "../utils/cartSlice";
 import { CDN_URL } from "../utils/constants";
 import Del from "../images/delete.png";
+import EmptyCart from "./EmptyCart";
 
 const Cart = () => {
   const cartItems = useSelector((store) => store.cart.items);
+
   const dispatch = useDispatch();
 
-  return (
-    <div className="mt-16 mr-auto mb-auto ml-8 flex flex-col items-center font-mono font-medium tracking-tighter text-base">
-      <h1 className="text-2xl font-extrabold mb-12">Cart</h1>
+  return cartItems.length === 0 ? (
+    <EmptyCart />
+  ) : (
+    <div className="mt-16 mr-auto ml-8 flex flex-col items-center font-mono font-medium tracking-tighter text-base">
+      <h1 className="text-2xl mb-4 font-extrabold">Cart</h1>
+      <button
+        className="py-2 px-3 mb-10 bg-black text-white rounded-lg"
+        onClick={() => {
+          dispatch(clearCart());
+        }}
+      >
+        Clear Cart
+      </button>
       <ul>
         {cartItems.map((item) => {
           return (

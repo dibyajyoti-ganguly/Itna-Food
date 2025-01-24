@@ -7,4 +7,7 @@ export const LIST_URL =
 export const MENU_URL =
   "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.4435653&lng=78.3603021&restaurantId=";
 
+export const GROC_URL =
+  "https://www.swiggy.com/api/instamart/home?clientId=INSTAMART-APP#";
+
 export const USER_URL = "https://api.github.com/users/dibyajyoti-ganguly";

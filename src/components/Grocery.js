@@ -1,7 +1,16 @@
+import useGroceryItems from "../utils/useGroceryItems";
+import GroceryCard from "./GroceryCard";
+import Shimmer from "./Shimmer";
+
 const Grocery = () => {
-  return (
-    <div className="m-4 p-4 text-slate-500 font-mono text-2xl font-bold">
-      <h1>Hello! What would you like to have?!</h1>
+  const { grocitems, setGrocItems } = useGroceryItems();
+  return grocitems === null ? (
+    <Shimmer />
+  ) : (
+    <div className="flex flex-wrap mt-1 ml-14">
+      {grocitems.map((item) => {
+        return <GroceryCard key={item?.nodeId} grocData={item} />;
+      })}
     </div>
   );
 };

@@ -8,6 +8,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Errorcomp from "./components/Errorcomp";
 import Body from "./components/Body";
+import Grocery from "./components/Grocery";
 import Header from "./components/Header";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Cart from "./components/Cart";
@@ -15,7 +16,7 @@ import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 
-const Grocery = lazy(() => import("./components/Grocery"));
+//const Grocery = lazy(() => import("./components/Grocery"));
 
 const App = () => {
   const [change, setChange] = useState("");
@@ -37,48 +38,60 @@ const App = () => {
   );
 };
 
-const appRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <Body />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/grocery",
-        element: (
-          <Suspense fallback={<Shimmer />}>
+const appRouter = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "/",
+          element: <Body />,
+        },
+        {
+          path: "/about",
+          element: <About />,
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
+        },
+        {
+          path: "/grocery",
+          element: (
+            //<Suspense fallback={<Shimmer />}>
             <Grocery />
-          </Suspense>
-        ),
-      },
-      {
-        path: "/cart",
-        element: <Cart />,
-      },
-      {
-        path: "/restaurants/:resId",
-        element: <RestaurantMenu />,
-      },
-    ],
-    errorElement: <Errorcomp />,
-  },
-]);
+            //</Suspense>
+          ),
+        },
+        {
+          path: "/cart",
+          element: <Cart />,
+        },
+        {
+          path: "/restaurants/:resId",
+          element: <RestaurantMenu />,
+        },
+      ],
+      errorElement: <Errorcomp />,
+    },
+  ],
+  {
+    future: {
+      v7_fetcherPersist: true,
+      v7_normalizeFormMethod: true,
+      v7_partialHydration: true,
+      v7_relativeSplatPath: true,
+      v7_skipActionErrorRevalidation: true,
+      v7_startTransition: true,
+    },
+  }
+);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={appRouter} />
+    <RouterProvider future={{ v7_startTransition: true }} router={appRouter} />
   </React.StrictMode>
 );
 

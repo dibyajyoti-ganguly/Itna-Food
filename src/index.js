@@ -26,7 +26,7 @@ const App = () => {
   return (
     <Provider store={appStore}>
       <UserContext.Provider value={{ username: username, setUsername }}>
-        <div className="bg-zinc-200 p-0 min-h-screen">
+        <div className="bg-zinc-200 pt-2 min-h-screen">
           <UserContext.Provider value={{ username: "Dibyajyoti" }}>
             <Header updateType={setChange} nval={val} updateVal={setVal} />
           </UserContext.Provider>

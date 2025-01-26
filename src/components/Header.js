@@ -13,11 +13,11 @@ const Header = ({ updateType, nval, updateVal }) => {
   const cartItems = useSelector((store) => store.cart.items);
 
   return (
-    <div className="flex justify-around items-center mx-auto my-0 w-4/5 bg-neutral-100 shadow-md rounded-xl">
+    <div className="flex justify-around items-center mx-auto my-0 w-2/3 bg-neutral-100 shadow-md rounded-xl">
       <div className="logo-container">
         <img className="w-24 mt-3" src={Logo} alt="logo"></img>
       </div>
-      <div className="bg-zinc-200 w-1/4 shadow-md rounded-lg h-12">
+      <div className="bg-zinc-200 w-72 shadow-md rounded-lg h-12">
         <input
           type="text"
           className="bg-zinc-200 rounded-lg outline-none h-12 w-5/6 text-center text-slate-500 font-mono text-md font-bold"
@@ -47,28 +47,6 @@ const Header = ({ updateType, nval, updateVal }) => {
               }}
             >
               Home
-            </Link>
-          </li>
-          <li className="p-2 m-2 hover:text-black">
-            <Link
-              to="/about"
-              style={{
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              About Us
-            </Link>
-          </li>
-          <li className="p-2 m-2 hover:text-black">
-            <Link
-              to="/contact"
-              style={{
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              Contact Us
             </Link>
           </li>
           <li className="p-2 m-2 hover:text-black">

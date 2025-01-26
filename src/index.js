@@ -3,9 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
-import Shimmer from "./components/Shimmer";
-import About from "./components/About";
-import Contact from "./components/Contact";
 import Errorcomp from "./components/Errorcomp";
 import Body from "./components/Body";
 import Grocery from "./components/Grocery";
@@ -47,14 +44,6 @@ const appRouter = createBrowserRouter(
         {
           path: "/",
           element: <Body />,
-        },
-        {
-          path: "/about",
-          element: <About />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
         },
         {
           path: "/grocery",

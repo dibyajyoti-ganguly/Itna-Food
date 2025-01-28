@@ -1,8 +1,6 @@
 import { CDN_URL } from "../utils/constants";
 
 const GroceryCard = ({ grocData }) => {
-  console.log(grocData);
-
   const { images, category, display_name, price, sku_quantity_with_combo } =
     grocData;
 
@@ -11,7 +9,7 @@ const GroceryCard = ({ grocData }) => {
   const image_id = images[0];
 
   return (
-    <div className="m-[5px] p-[5px] w-[140px] h-[240px] font-mono font-semibold text-xs text-slate-500 bg-neutral-100 shadow-md leading-4 cursor-pointer rounded-md border-4 border-transparent hover:border-orange-500">
+    <div className="m-1 p-1 w-[150px] h-[240px] font-mono font-semibold text-xs text-slate-500 bg-neutral-100 shadow-md leading-4 cursor-pointer rounded-md border-4 border-transparent hover:border-orange-500">
       <img
         className="h-2/4 w-[192px] rounded-md"
         src={CDN_URL + image_id}

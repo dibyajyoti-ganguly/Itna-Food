@@ -27,7 +27,7 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="pb-6">
-      <div className="flex justify-evenly py-3">
+      <div className="flex flex-col justify-evenly items-center py-3 sm:flex-row">
         <button
           className="bg-zinc-200 mt-10 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 cursor-pointer"
           onClick={() => {
@@ -37,12 +37,12 @@ const Body = () => {
           Top-Rated Restaurants for {username}
         </button>
         <input
-          className=" outline-none text-center bg-zinc-200 w-[280px] mt-10 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500"
+          className=" outline-none text-center bg-zinc-200 mt-2 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 sm:hidden"
           placeholder="Enter your name"
           onChange={(e) => setUsername(e.target.value)}
         ></input>
       </div>
-      <div className="flex flex-wrap mt-1 ml-14">
+      <div className="flex flex-wrap mt-1 justify-evenly sm:mx-[1%]">
         {nval === 0
           ? list.map((resObj) => (
               <Link

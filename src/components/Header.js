@@ -13,7 +13,7 @@ const Header = ({ updateType, nval, updateVal }) => {
   const cartItems = useSelector((store) => store.cart.items);
 
   return (
-    <div className="flex justify-around items-center mx-auto my-0 w-2/3 bg-neutral-100 shadow-md rounded-xl">
+    <div className="hidden sm:flex justify-around items-center mx-auto my-0 w-2/3 bg-neutral-100 shadow-md rounded-xl">
       <div className="logo-container">
         <img className="w-24 mt-3" src={Logo} alt="logo"></img>
       </div>

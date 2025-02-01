@@ -29,7 +29,7 @@ const Body = () => {
     <div className="pb-6">
       <div className="flex flex-col justify-evenly items-center py-3 sm:flex-row">
         <button
-          className="bg-zinc-200 mt-10 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 cursor-pointer"
+          className="bg-zinc-200 mt-8 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 cursor-pointer"
           onClick={() => {
             setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
           }}

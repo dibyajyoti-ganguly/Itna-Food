@@ -13,11 +13,11 @@ const Header = ({ updateType, nval, updateVal }) => {
   const cartItems = useSelector((store) => store.cart.items);
 
   return (
-    <div className="hidden sm:flex justify-around items-center mx-auto my-0 w-2/3 bg-neutral-100 shadow-md rounded-xl">
+    <div className="flex justify-around items-center mx-auto my-0 w-2/3 bg-neutral-100 shadow-md rounded-xl">
       <div className="logo-container">
         <img className="w-24 mt-3" src={Logo} alt="logo"></img>
       </div>
-      <div className="bg-zinc-200 w-72 shadow-md rounded-lg h-12">
+      <div className="bg-zinc-200 w-72 shadow-md rounded-lg h-12 mb-1">
         <input
           type="text"
           className="bg-zinc-200 rounded-lg outline-none h-12 w-5/6 text-center text-slate-500 font-mono text-md font-bold"
@@ -35,9 +35,6 @@ const Header = ({ updateType, nval, updateVal }) => {
       </div>
       <div className="nav-items">
         <ul className="flex items-center px-0 py-4 list-none text-slate-500 font-mono text-lg font-bold">
-          <li className="p-2 m-2 hover:text-black">
-            {onlineStatus ? "Online🟢" : "Offline⭕"}
-          </li>
           <li className="p-2 m-2 hover:text-black">
             <Link
               to="/"

@@ -11,6 +11,8 @@ import Cart from "./components/Cart";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import useWindowSize from "./utils/useWindowSize";
+import Hamburgheader from "./components/Hamburgheader";
 
 //const Grocery = lazy(() => import("./components/Grocery"));
 
@@ -18,13 +20,18 @@ const App = () => {
   const [change, setChange] = useState("");
   const [val, setVal] = useState(0);
   const [username, setUsername] = useState("You");
+  const isMobileView = useWindowSize();
 
   return (
     <Provider store={appStore}>
       <UserContext.Provider value={{ username: username, setUsername }}>
         <div className="bg-zinc-200 pt-2 min-h-screen">
           <UserContext.Provider value={{ username: "Dibyajyoti" }}>
-            <Header updateType={setChange} nval={val} updateVal={setVal} />
+            {isMobileView==1 ? (
+              <Hamburgheader />
+            ) : (
+              <Header updateType={setChange} nval={val} updateVal={setVal} />
+            )}
           </UserContext.Provider>
 
           <Outlet context={{ nval: val, type: change }} />

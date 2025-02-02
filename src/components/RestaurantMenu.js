@@ -43,7 +43,7 @@ const RestaurantMenu = () => {
         <p className="text-base text-[rgba(2,6,12,0.6)]">
           {cuisines.join(", ")} - {costForTwoMessage}
         </p>
-        <div className={isMobileView == 1 ? "w-full px-4" : ""}>
+        <div className={'mt-7 isMobileView == 1 ? "w-full px-4" : ""'}>
           {categories.map((category, index) => {
             return (
               <RestaurantCategory

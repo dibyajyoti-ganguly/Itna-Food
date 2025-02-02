@@ -1,15 +1,20 @@
 import { CDN_URL } from "../utils/constants";
+import useWindowSize from "../utils/useWindowSize";
 
 const GroceryCard = ({ grocData }) => {
   const { images, category, display_name, price, sku_quantity_with_combo } =
     grocData;
 
+  const isMobileView = useWindowSize();
   const { store_price, offer_price } = price;
-
   const image_id = images[0];
 
   return (
-    <div className="m-1 p-1 w-[150px] h-[240px] font-mono font-semibold text-xs text-slate-500 bg-neutral-100 shadow-md leading-4 cursor-pointer rounded-md border-4 border-transparent hover:border-orange-500">
+    <div
+      className={`p-1 w-[150px] h-[240px] font-mono font-semibold text-xs text-slate-500 bg-neutral-100 shadow-md leading-4 cursor-pointer rounded-md border-4 border-transparent hover:border-orange-500 ${
+        isMobileView == 1 ? "m-2" : "m-1"
+      }`}
+    >
       <img
         className="h-2/4 w-[192px] rounded-md"
         src={CDN_URL + image_id}

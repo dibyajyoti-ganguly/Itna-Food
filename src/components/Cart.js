@@ -28,19 +28,15 @@ const Cart = () => {
         {cartItems.map((item) => {
           return (
             <li
-              className={
-                isMobileView == 1
-                  ? "flex justify-between list-none mb-10"
-                  : "flex w-[680px] justify-between list-none mb-10"
-              }
+              className={`flex justify-between list-none mb-10 ${
+                isMobileView == 0 ? "w-[680px]" : ""
+              }`}
               key={item?.card?.info?.id}
             >
               <span
-                className={
-                  isMobileView == 1
-                    ? "w-[250px] text-[rgba(2,6,12,0.6)]"
-                    : "w-[470px] text-[rgba(2,6,12,0.6)]"
-                }
+                className={`text-[rgba(2,6,12,0.6)] ${
+                  isMobileView == 1 ? "w-[250px]" : "w-[470px]"
+                }`}
               >
                 <p className="font-extrabold text-black">
                   {item?.card?.info?.name}
@@ -65,11 +61,11 @@ const Cart = () => {
               <div className={isMobileView == 1 ? "" : "w-[160px"}>
                 <div className="absolute">
                   <button
-                    className={
+                    className={`rounded-lg bg-zinc-200 shadow-lg text-lg font-extrabold tracking-wider text-green-800 opacity-90 ${
                       isMobileView == 1
-                        ? "px-5 py-2 mt-16 ml-5 rounded-lg bg-zinc-200 shadow-lg text-lg font-extrabold tracking-wider text-green-800 opacity-90"
-                        : "px-6 py-2 mt-28 ml-10 rounded-lg bg-zinc-200 shadow-lg text-lg font-extrabold tracking-wider text-green-800 opacity-90"
-                    }
+                        ? "px-5 py-2 mt-16 ml-5"
+                        : "px-6 py-2 mt-28 ml-10"
+                    }`}
                     onClick={() => {
                       dispatch(removeItem(item));
                     }}
@@ -79,11 +75,9 @@ const Cart = () => {
                 </div>
                 {item?.card?.info?.imageId ? (
                   <img
-                    className={
-                      isMobileView == 1
-                        ? "w-28 h-24 rounded-xl shadow-2xl"
-                        : "w-40 h-36 rounded-xl shadow-2xl"
-                    }
+                    className={`rounded-xl shadow-2xl ${
+                      isMobileView == 1 ? "w-28 h-24" : "w-40 h-36"
+                    }`}
                     src={CDN_URL + item?.card?.info?.imageId}
                     alt="Item"
                   />

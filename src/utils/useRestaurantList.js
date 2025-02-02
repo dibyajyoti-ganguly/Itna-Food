@@ -14,14 +14,11 @@ const useRestaurantList = () => {
         let newList =
           json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants;
-        console.log(newList);
-        /*let newListv2 =
+        let newListv2 =
           json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants;
-        console.log(newList);
-        //console.log(newListv2);
         newListv2 = newListv2.slice(4);
-        newList = newList.concat(newListv2);*/
+        newList = newList.concat(newListv2);
         setList(newList);
       },
     []

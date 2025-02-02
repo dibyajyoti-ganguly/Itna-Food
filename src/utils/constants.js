@@ -7,8 +7,11 @@ export const DLIST_URL =
 export const MLIST_URL =
   "https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=17.4435653&lng=78.3603021&carousel=true&third_party_vendor=1";
 
-export const MENU_URL =
+export const DMENU_URL =
   "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.4435653&lng=78.3603021&restaurantId=";
+
+export const AMENU_URL =
+  "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.4435653&lng=78.3603021&restaurantId=";
 
 export const GROC_URL =
   "https://www.swiggy.com/api/instamart/campaign/mxn?layoutId=5274&limit=40&pageNo=0&serviceLine=INSTAMART&customerPage=STORES_MxN_46&storeId=&primaryStoreId=&secondaryStoreId=";

@@ -1,4 +1,5 @@
 import ItemList from "./ItemList";
+import useWindowSize from "../utils/useWindowSize";
 
 const RestaurantCategory = ({
   itemCards,
@@ -7,9 +8,17 @@ const RestaurantCategory = ({
   setShowIndex,
   index,
 }) => {
+  const isMobileView = useWindowSize();
+
   return (
     <div>
-      <div className="flex justify-between w-[680px]">
+      <div
+        className={
+          isMobileView == 1
+            ? "flex justify-between"
+            : "flex justify-between w-[680px]"
+        }
+      >
         <h2 className="text-xl font-extrabold my-5">
           {title}({itemCards.length})
         </h2>

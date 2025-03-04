@@ -1,6 +1,6 @@
 # Itna-Food 🍔
 
-Hungry? Grab a bite with Itna-Food. Bundled using [Parcel](http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg).
+Hungry? Grab a bite with Itna-Food. Bundled using [Parcel](https://parceljs.org/).
 
 ## Description
 

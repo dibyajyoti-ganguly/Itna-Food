@@ -1,6 +1,39 @@
-# Getting Started with Create React App
+# Itna-Food 🍔
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hungry? Grab a bite with Itna-Food. Bundled using [Parcel](http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16.jpg).
+
+## Description
+
+The app allows you to view all the top-rated restaurants in your location and also enables viewing the menu of each of those joints. We have built a grocery component as well for avaialble groceries.
+
+# Getting Started with the App
+
+This module informs you about the necessary libraries & dependencies you need to download & install prior to running the app. Also, we get to know the available scripts which can be executed.
+
+## Dependencies
+
+### `Parcel`
+The zero configuration build tool for the web. Parcel combines a great out-of-the-box development experience with a scalable architecture that can take your project from just getting started to massive production application. No more fiddling with configuration, or spending hours to keep up with best practices – it just works!
+
+### `React`
+React is a JavaScript library for rendering user interfaces (UI). UI is built from small units like buttons, text, and images. React lets you combine them into reusable, nestable components. From web sites to phone apps, everything on the screen can be broken down into components. 
+
+React applications are built from isolated pieces of UI called components. A React component is a JavaScript function that you can sprinkle with markup. 
+
+### `React-Router`
+React Router is a multi-strategy router for React bridging the gap from React 18 to React 19. You can use it maximally as a React framework or minimally as a library with your own architecture. Like previous versions, React Router can still be used as a simple, declarative routing library. Its only job will be matching the URL to a set of components, providing access to URL data, and navigating around the app.
+
+This strategy is popular for "Single Page Apps" that have their own frontend infrastructure and v6 apps looking for a stress free upgrade. It's particularly good at offline + sync architectures where pending states are rare and users have long running sessions.
+
+### `Tailwind`
+A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. Tailwind is unapologetically modern, and takes advantage of all the latest and greatest CSS features to make the developer experience as enjoyable as possible.
+
+## Installing
+
+* How/where to clone the repository:
+```
+git clone "https://github.com/dibyajyoti-ganguly/Itna-Food.git"
+```
 
 ## Available Scripts
 
@@ -39,32 +72,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## Authors
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributors names and contact info:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Dibyajyoti Ganguly : [@mrdibs7](https://x.com/mrdibs7)
 
-### Code Splitting
+## Acknowledgments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Inspiration, docs, code snippets, etc.
+* [React docs](https://react.dev/)
+* [Tailwind](https://tailwindcss.com/)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

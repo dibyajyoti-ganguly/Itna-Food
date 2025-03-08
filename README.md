@@ -28,6 +28,11 @@ This strategy is popular for "Single Page Apps" that have their own frontend inf
 ### `Tailwind`
 A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup. Tailwind is unapologetically modern, and takes advantage of all the latest and greatest CSS features to make the developer experience as enjoyable as possible.
 
+### `Jest`
+Jest is a delightful JavaScript Testing Framework with a focus on simplicity. It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and more! No additional setup needed. Jest can collect code coverage information from entire projects, including untested files.
+
+Jest uses a custom resolver for imports in your tests, making it simple to mock any object outside of your test’s scope. You can use mocked imports with the rich Mock Functions API to spy on function calls with readable test syntax.
+
 ## Installing
 
 * How/where to clone the repository:

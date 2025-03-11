@@ -1,13 +1,11 @@
 import { useState, useContext } from "react";
 import Logo from "../images/Group 18116.png";
 import { Link } from "react-router-dom";
-import useOnlineStatus from "../utils/useOnlineStatus";
 import UserContext from "../utils/UserContext";
 import { useSelector } from "react-redux";
 
 const Header = ({ updateType, nval, updateVal }) => {
   const [click, setClick] = useState("Login");
-  const onlineStatus = useOnlineStatus();
   const data = useContext(UserContext);
 
   const cartItems = useSelector((store) => store.cart.items);

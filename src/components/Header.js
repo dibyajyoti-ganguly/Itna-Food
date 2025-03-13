@@ -26,7 +26,7 @@ const Header = ({ updateType, nval, updateVal }) => {
         ></input>
         <button
           className="cursor-pointer h-12 w-1/6 rounded-lg outline-none text-slate-500 font-mono text-2xl font-bold hover:text-black"
-          onClick={() => updateVal(!nval)}
+          onClick={() => updateVal(1)}
         >
           S
         </button>

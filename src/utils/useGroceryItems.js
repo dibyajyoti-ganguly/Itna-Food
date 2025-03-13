@@ -14,7 +14,7 @@ const useGroceryItems = () => {
         let newItems = json?.data?.widgets[2]?.data;
         const newestItems = sec_json?.data?.widgets[2]?.data;
         newItems = newItems.concat(newestItems);
-        newItems = newItems.slice(0, newItems.length - 4);
+        newItems = newItems.slice(0, 28);
         setGrocItems(newItems);
       },
     []

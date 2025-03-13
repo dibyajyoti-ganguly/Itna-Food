@@ -20,7 +20,7 @@ const Grocery = () => {
   return grocitems === null ? (
     <Shimmer />
   ) : (
-    <div className="flex flex-wrap justify-evenly sm:mx-[1%] mt-10 pb-9">
+    <div className="flex flex-wrap justify-evenly sm:mx-[10%] mt-14 pb-9">
       {grocitems.map((item) => {
         return (
           <GroceryCard key={item?.product_id} grocData={item?.variations[0]} />

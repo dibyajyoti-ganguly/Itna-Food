@@ -1,5 +1,5 @@
 import { useOutletContext, Link } from "react-router-dom";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import useRestaurantList from "../utils/useRestaurantList";
@@ -12,6 +12,7 @@ const Body = () => {
   const onlinestatus = useOnlineStatus();
   const { username } = useContext(UserContext);
   const { setUsername } = useContext(UserContext);
+  const [rated, setRated] = useState(0);
 
   if (onlinestatus === false) {
     return (
@@ -32,6 +33,7 @@ const Body = () => {
           className="bg-zinc-200 mt-8 mb-7 px-4 py-2 border-solid border-orange-500 border-4 rounded-xl font-mono font-bold text-base text-orange-500 cursor-pointer"
           onClick={() => {
             setList(list.filter((resObj) => resObj.info.avgRating > 4.5));
+            setRated(1);
           }}
         >
           Top-Rated Restaurants for {username}
@@ -42,7 +44,11 @@ const Body = () => {
           onChange={(e) => setUsername(e.target.value)}
         ></input>
       </div>
-      <div className="flex flex-wrap mt-1 justify-evenly sm:mx-[10%]">
+      <div
+        className={`flex flex-wrap mt-1 ${
+          rated === 1 ? "justify-center" : "justify-evenly"
+        } sm:mx-[10%]`}
+      >
         {nval === 0
           ? list.map((resObj) => (
               <Link
@@ -53,7 +59,7 @@ const Body = () => {
                   textDecoration: "none",
                 }}
               >
-                <RestaurantCard resData={resObj} />
+                <RestaurantCard resData={resObj} rated={rated} />
               </Link>
             ))
           : list
@@ -69,7 +75,7 @@ const Body = () => {
                     textDecoration: "none",
                   }}
                 >
-                  <RestaurantCard resData={resObj} />
+                  <RestaurantCard resData={resObj} rated={rated} />
                 </Link>
               ))}
       </div>

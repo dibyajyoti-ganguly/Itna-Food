@@ -14,12 +14,7 @@ const useRestaurantList = () => {
         let newList =
           json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants;
-        newList = newList.filter((res) => {
-          return (
-            !res.info.name.includes("45th") &&
-            !res.info.name.includes("Labonel")
-          );
-        });
+        newList = newList.slice(0, 18);
         setList(newList);
       },
     []

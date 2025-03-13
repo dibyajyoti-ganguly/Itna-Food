@@ -14,11 +14,12 @@ const useRestaurantList = () => {
         let newList =
           json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
             ?.restaurants;
-        let newListv2 =
-          json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
-            ?.restaurants;
-        newListv2 = newListv2.slice(4);
-        newList = newList.concat(newListv2);
+        newList = newList.filter((res) => {
+          return (
+            !res.info.name.includes("45th") &&
+            !res.info.name.includes("Labonel")
+          );
+        });
         setList(newList);
       },
     []

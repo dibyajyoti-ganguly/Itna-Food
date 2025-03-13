@@ -42,7 +42,7 @@ const Body = () => {
           onChange={(e) => setUsername(e.target.value)}
         ></input>
       </div>
-      <div className="flex flex-wrap mt-1 justify-evenly sm:mx-[1%]">
+      <div className="flex flex-wrap mt-1 justify-evenly sm:mx-[10%]">
         {nval === 0
           ? list.map((resObj) => (
               <Link

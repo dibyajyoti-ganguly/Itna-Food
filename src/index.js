@@ -4,7 +4,6 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Errorcomp from "./components/Errorcomp";
 import Body from "./components/Body";
-import Grocery from "./components/Grocery";
 import Header from "./components/Header";
 import RestaurantMenu from "./components/RestaurantMenu";
 import Cart from "./components/Cart";
@@ -13,8 +12,6 @@ import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
 import useWindowSize from "./utils/useWindowSize";
 import Hamburgheader from "./components/Hamburgheader";
-
-//const Grocery = lazy(() => import("./components/Grocery"));
 
 const App = () => {
   const [change, setChange] = useState("");
@@ -27,7 +24,7 @@ const App = () => {
       <UserContext.Provider value={{ username: username, setUsername }}>
         <div className="bg-zinc-200 pt-2 min-h-screen">
           <UserContext.Provider value={{ username: "Dibyajyoti" }}>
-            {isMobileView==1 ? (
+            {isMobileView == 1 ? (
               <Hamburgheader />
             ) : (
               <Header updateType={setChange} nval={val} updateVal={setVal} />
@@ -50,14 +47,6 @@ const appRouter = createBrowserRouter(
         {
           path: "/",
           element: <Body />,
-        },
-        {
-          path: "/grocery",
-          element: (
-            //<Suspense fallback={<Shimmer />}>
-            <Grocery />
-            //</Suspense>
-          ),
         },
         {
           path: "/cart",

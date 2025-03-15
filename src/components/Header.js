@@ -32,8 +32,8 @@ const Header = ({ updateType, nval, updateVal }) => {
         </button>
       </div>
       <div className="nav-items">
-        <ul className="flex items-center px-0 py-4 list-none text-slate-500 font-mono text-lg font-bold">
-          <li className="p-2 m-2 hover:text-black">
+        <ul className="flex items-center px-0 py-4 list-none text-slate-500 font-mono text-xl font-bold">
+          <li className="p-2 m-3 hover:text-black">
             <Link
               to="/"
               style={{
@@ -44,18 +44,7 @@ const Header = ({ updateType, nval, updateVal }) => {
               Home
             </Link>
           </li>
-          <li className="p-2 m-2 hover:text-black">
-            <Link
-              to="/grocery"
-              style={{
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              Grocery
-            </Link>
-          </li>
-          <li className="p-2 m-2 hover:text-black">
+          <li className="p-2 m-3 hover:text-black">
             <Link
               to="/cart"
               style={{
@@ -67,9 +56,9 @@ const Header = ({ updateType, nval, updateVal }) => {
             </Link>
           </li>
           <button
-            className="p-2 m-2 hover:text-black cursor-pointer"
+            className="p-2 m-3 hover:text-black cursor-pointer"
             onClick={() => {
-              setClick(click === "Login" ? data.username : "Login");
+              setClick(click === "Login" ? "Logout" : "Login");
             }}
           >
             {click}

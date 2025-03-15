@@ -68,7 +68,9 @@ const ItemList = ({ title, itemCards }) => {
                   />
                 ) : (
                   <img
-                    className="w-40 h-36 rounded-xl shadow-2xl"
+                    className={`rounded-xl shadow-2xl ${
+                      isMobileView == 1 ? "w-28 h-24" : "w-40 h-36"
+                    }`}
                     src="https://static.thenounproject.com/png/2186849-200.png"
                     alt="Item"
                   />

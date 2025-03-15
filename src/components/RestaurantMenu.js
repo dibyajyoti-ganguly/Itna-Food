@@ -38,7 +38,7 @@ const RestaurantMenu = () => {
           );
 
     return (
-      <div className="mt-10 mb-auto flex flex-col items-center font-mono font-medium tracking-tighter text-base">
+      <div className="mt-10 mb-auto mx-5 flex flex-col items-center font-mono font-normal tracking-normal text-base">
         <h2 className="text-xl font-extrabold ">{name}</h2>
         <p className="text-base text-[rgba(2,6,12,0.6)]">
           {cuisines.join(", ")} - {costForTwoMessage}

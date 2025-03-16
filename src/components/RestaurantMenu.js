@@ -11,7 +11,7 @@ const RestaurantMenu = () => {
   const resInfo = useRestaurantMenu(resId);
   const isMobileView = useWindowSize();
 
-  if (resInfo === null) return <Shimmer />;
+  if (resInfo === null) return null;
   else {
     const { name, cuisines, costForTwoMessage } =
       resInfo?.cards[2]?.card?.card?.info;

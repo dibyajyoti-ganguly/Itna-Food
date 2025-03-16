@@ -15,7 +15,7 @@ const RestaurantCard = (props) => {
   return (
     <div
       className={`my-[5px] p-[5px] w-[175px] h-[280px] ${
-        rated === 1 ? "mx-4" : "mx-0"
+        rated === 1 ? "mx-3" : "mx-0"
       } font-mono font-semibold text-sm text-slate-500 bg-neutral-100 shadow-md leading-7 cursor-pointer rounded-md border-4 border-transparent hover:border-orange-500`}
     >
       <img

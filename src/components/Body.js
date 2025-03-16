@@ -25,7 +25,13 @@ const Body = () => {
   }
 
   return list.length === 0 ? (
-    <Shimmer />
+    <div className="pb-6">
+      <div className="flex flex-col justify-evenly items-center py-3 sm:flex-row animate-pulse">
+        <button className="bg-gray-300 mt-8 mb-7 px-4 py-2 rounded-xl font-mono font-bold text-base cursor-pointer w-[280px] h-[50px]" />
+        <input className=" outline-none text-center bg-gray-300 mt-2 mb-7 px-4 py-2 border-solid border-4 rounded-xl font-mono font-bold text-base sm:hidden"></input>
+      </div>
+      <Shimmer />
+    </div>
   ) : (
     <div className="pb-6">
       <div className="flex flex-col justify-evenly items-center py-3 sm:flex-row">

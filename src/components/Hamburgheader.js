@@ -36,18 +36,6 @@ const Hamburgheader = () => {
           <hr className="w-full border-t border-gray-200" />
           <li className="p-1 m-2 hover:text-black">
             <Link
-              to="/grocery"
-              style={{
-                color: "inherit",
-                textDecoration: "none",
-              }}
-            >
-              Grocery
-            </Link>
-          </li>
-          <hr className="w-full border-t border-gray-200" />
-          <li className="p-1 m-2 hover:text-black">
-            <Link
               to="/cart"
               style={{
                 color: "inherit",

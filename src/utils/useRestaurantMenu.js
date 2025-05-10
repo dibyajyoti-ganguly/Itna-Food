@@ -12,7 +12,9 @@ const useRestaurantMenu = (resId) => {
 
   async function fetchData() {
     const data = await fetch(
-      isMobileView == 1 ? AMENU_URL + resId : DMENU_URL + resId
+      isMobileView == 1
+        ? "https://itna-food-backend.onrender.com/mapi/" + resId
+        : "https://itna-food-backend.onrender.com/dapi/" + resId
     );
     const json = await data.json();
     setResInfo(json.data);

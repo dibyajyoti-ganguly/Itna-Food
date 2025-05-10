@@ -8,13 +8,15 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/user-event": "^13.5.0",
     "browserslist": "^4.24.4",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-redux": "^9.2.0",
     "react-router-dom": "^6.28.0"
   },
   "scripts": {
-    "start": "parcel src/index.html --port 3001",
+    "start": "parcel src/index.html --port 3000",
     "build": "parcel build src/index.html",
     "serve": "parcel serve build/index.html",
     "test": "jest",

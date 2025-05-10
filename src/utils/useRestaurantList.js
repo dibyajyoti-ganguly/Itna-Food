@@ -10,7 +10,11 @@ const useRestaurantList = () => {
     const fetchData = async () => {
       try {
         // Use the correct API endpoint path - remove .js and use the right filename
-        const data = await fetch(isMobileView == 1 ? MLIST_URL : DLIST_URL);
+        const data = await fetch(
+          isMobileView == 1
+            ? "https://itna-food-backend.onrender.com/mapi/"
+            : "https://itna-food-backend.onrender.com/dapi/"
+        );
         const json = await data.json();
 
         // Make sure this path matches the structure of your API response
